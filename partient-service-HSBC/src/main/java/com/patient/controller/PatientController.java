@@ -31,7 +31,8 @@ import com.patient.repository.PatientRepository;
 @CrossOrigin(origins = "http://localhost:3000/", allowedHeaders = "*", exposedHeaders = {"Access-Control-Allow-Origin"},  methods = {RequestMethod.OPTIONS, RequestMethod.PUT, RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE})
 public class PatientController {
 
-    private static final String DOCTOR_SERVICE_URL = "http://localhost:8001/api/doctors/";
+    //private static final String DOCTOR_SERVICE_URL = "http://localhost:8001/api/doctors/";
+    private static final String DOCTOR_SERVICE_URL = "http://doctorapp:8001/api/doctors/";
 
     @Autowired
     private RestTemplate restTemplate;
